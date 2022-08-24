@@ -17,16 +17,12 @@
 > legend("topright", 
        legend = c ("Group1", "Group2"), 
        fill= c ("darkgreen", "Grey"))
-     
 > barplot(data, 
         xaxt='n', yaxt="n", beside= TRUE)
-
 > barplot(data, 
          xaxt='n', yaxt="n", beside= TRUE),
          xlab = 'My x-axis label')
-
 > barplot(data, 
          ylim =c(0, 2))
- 
 > barplot(data, 
          ylim =c(0, 2), xaxt='n', xlab = 'My x-axis label', beside= TRUE)![image](https://user-images.githubusercontent.com/79000815/186300743-eff89084-e2ad-4092-80d8-8a1d76ace910.png)
