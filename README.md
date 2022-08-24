@@ -1,15 +1,25 @@
-> data <- c( 2, 3, 4, 5, 6,7)
+> data <- as.matrix(data.frame(A = c(2, 3), 
+                               B = c(4, 5),
+                               C = c(6, 7)))
+                               
+> rownames(data) <- c("Group 1", "Group 2")
 > 
-> barplot(data)
+> data  
+> str(data) 
+> head(data)
 > 
-> barplot(data, col="Red")
+> barplot(data, col=c("darkgreen", "Grey")) 
+>         
+> barplot(data, col=c("darkgreen", "Grey"), beside=TRUE) 
 > 
-> barplot(data, horiz=T)
+> legend("topright", 
+       legend = c ("Group1", "Group2"), 
+       fill= c ("darkgreen", "Grey"))
+       
+> barplot(data, xaxt='n', yaxt="n", beside= TRUE)
 > 
-> barplot(data, col= "orange", horiz=T)
+> barplot(data, xaxt='n', yaxt="n", beside= TRUE), xlab = 'My x-axis label')
 > 
-> group <- letters [1:6]
+> barplot(data, ylim =c(0, 2))
 > 
-> barplot(data, names.arg=group)
-> 
-> barplot(data, col= "orange", horiz=T, names.arg=group)
+> barplot(data, ylim =c(0, 2), xaxt='n', xlab = 'My x-axis label', beside= TRUE)
