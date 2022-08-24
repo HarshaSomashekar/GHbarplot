@@ -24,4 +24,4 @@
 > barplot(data, 
          ylim =c(0, 2))
 > barplot(data, 
-         ylim =c(0, 2), xaxt='n', xlab = 'My x-axis label', beside= TRUE)![image](https://user-images.githubusercontent.com/79000815/186300743-eff89084-e2ad-4092-80d8-8a1d76ace910.png)
+         ylim =c(0, 2), xaxt='n', xlab = 'My x-axis label', beside= TRUE)
